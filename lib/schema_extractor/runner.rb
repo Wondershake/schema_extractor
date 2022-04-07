@@ -29,7 +29,7 @@ module SchemaExtractor
 
     def output(schema)
       path = File.join(options[:output], "#{schema.name}#{formatter.extension}")
-      File.write(path, formatter.format(schema))
+      File.write(path, "#{formatter.format(schema)} \n")
     end
   end
 end
