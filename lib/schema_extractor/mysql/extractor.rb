@@ -69,7 +69,7 @@ module SchemaExtractor
           :boolean
         when /^date$/
           :date
-        when /^datetime$/
+        when /^datetime$/, /^datetime\(\d+\)$/
           :datetime
         when /^decimal\(\d+,\d+\)$/
           :decimal
